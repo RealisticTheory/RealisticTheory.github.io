@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Writing Web Application</title>
+
+  <link rel="stylesheet" type="text/css" href="normalize/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/general.css">
+  <link rel="stylesheet" type="text/css" href="css/sheetmusic.css">
+</head>
+<body>
+  <div class="header">
+    <div class="pages">
+      <a href="about.html">About</a>
+      <a href="index.html">Music Sheet</a>
+      <a href="howpage.html">Instructions</a>
+    </div>
+    <div class="middle-section">
+      <h1>Music Writting Website</h1>
+      <img class="music-title-pic" src="images/music-score-notes.jpg" alt="music score picture">
+    </div>
+  </div>
+
+
+  <div class="middle">
+    <div class="leftSide">
+        
+      <div id="detector" class="vague">
+        <div class="pitch"><span id="pitch">--</span>Hz</div>
+        <div class="note"><span id="note">--</span></div>   
+        <canvas id="output" width=300 height=42></canvas>
+        <div id="detune"><span id="detune_amt">--</span><span id="flat">cents &#9837;</span><span id="sharp">cents &#9839;</span></div>
+      </div>
+    
+      <span id="jsontext"></span>
+      <p id="temp"></p>
+
+      <div class="note-buttons">
+        <button onclick = "chooseWholeNote()" id="whole-note">Whole Note</button>
+        <button onclick = "chooseHalfNote()" id="half-note">Half Note</button>
+        <button onclick = "chooseQuarterNote()" id="quarter-note">Quarter Note</button>
+        <button onclick = "chooseEighthNote()" id="eighth-note">Eighth Note</button>
+      </div>
+      <div class="main-buttons">
+        <!--
+        <button onclick="playMusic()">Play Music Sheet</button>
+        -->
+        <button onclick="toggleLiveInput()">Use Mic</button>
+        <button onclick="clearNotes()">Clear</button>
+      </div>
+    </div>
+
+    <div class="sheet-music">
+      <div class="bar">
+        <div class="stave-header"></div>
+        <div class="bar-line" aria-label"bar-line"></div>
+      </div>
+      <div class="bar">
+        <div class="stave-header"></div>
+        <div class="bar-line" aria-label"bar-line"></div>
+      </div>
+      <div class="bar">
+        <div class="stave-header"></div>
+        <div class="bar-line" aria-label"bar-line"></div>
+      </div>
+      <div class="bar">
+        <div class="stave-header"></div>
+        <div class="bar-line" aria-label"bar-line"></div>
+      </div>
+      <div class="bar">
+        <div class="stave-header"></div>
+        <div class="bar-line" aria-label"bar-line"></div>
+      </div>
+      <div class="bar">
+        <div class="stave-header"></div>
+        <div class="bar-line" aria-label"bar-line"></div>
+      </div>
+      <div class="bar">
+        <div class="stave-header"></div>
+        <div class="bar-line" aria-label"bar-line"></div>
+      </div>
+      <div class="bar">
+        <div class="stave-header"></div>
+        <div class="bar-line" aria-label"bar-line"></div>
+      </div>
+      <div class="bar">
+        <div class="stave-header"></div>
+        <div class="bar-line" aria-label"bar-line"></div>
+      </div>
+      <div class="bar">
+        <div class="stave-header"></div>
+        <div class="bar-line" aria-label"bar-line"></div>
+      </div>
+      <div class="bar">
+        <div class="stave-header"></div>
+        <div class="bar-line" aria-label"bar-line"></div>
+      </div>
+      <div class="bar">
+        <div class="stave-header"></div>
+        <div class="bar-line" aria-label"bar-line"></div>
+      </div>
+      <div class="bar">
+        <div class="stave-header"></div>
+        <div class="bar-line" aria-label"bar-line"></div>
+      </div>
+      <div class="bar">
+        <div class="stave-header"></div>
+        <div class="bar-line" aria-label"bar-line"></div>
+      </div>
+      <div class="bar">
+        <div class="stave-header"></div>
+        <div class="bar-line" aria-label"bar-line"></div>
+      </div>
+      <div class="bar">
+        <div class="stave-header"></div>
+        <div class="bar-line" aria-label"bar-line"></div>
+      </div>   
+    </div>
+  </div>
+  <script src="javascript/pitchdetect.js"></script>
+  <script src="javascript/musicnotes.js"></script>
+  <script src="javascript/sounds.js"></script>
+</body>
+</html>

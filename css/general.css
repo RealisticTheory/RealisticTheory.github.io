@@ -1,0 +1,98 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("../images/eighth-note-up-change4.png");
+    background-repeat: repeat;
+    background-color: bisque;
+}
+
+.header { 
+  grid-area: header; 
+  align-items: center;
+}
+
+.desc {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 370px;
+  margin-top: 40px;
+  padding-bottom: auto;
+}
+
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1020px 1fr;
+}
+
+.middle-section2 {
+  flex: 1;
+  margin-left: 0px;
+  margin-right: 35px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1000px 1fr;
+}
+
+.music-title-pic {
+  height: 8em;
+  width: auto;
+  display: inline-block;
+}
+
+.pages {
+  font-size: 25px;
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
+h1 {
+  text-align: right;
+}
+
+.middle {
+  grid-template-columns: 300px 1fr;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.leftSide { 
+  background-color:rgb(198, 253, 249);
+  margin-right: 25px;
+  margin: auto;
+  border: black;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 20px;
+}
+
+.sheet-music { 
+  font-size: 0.4em;
+  max-width: 144em;
+  padding-left: 24em;
+}
+
+.note-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: fantasy;
+  margin-bottom: 150px;
+}
+.main-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding-bottom: 50px;
+}
+
+button {
+  font-family: fantasy;
+  font-size: 20px;
+}
+
